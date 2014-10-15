@@ -1,8 +1,11 @@
 baseurl = "http://www.gentoo-cn.info"
 languageCode = "zh-cn"
-title = "Gentoo 中文信息"
+title = "Gentoo 中文资讯"
 canonifyurls = true
 
 [permalinks]
 articles = "/:year/:month/:filename/"
 pages = "/:filename/"
+
+[params]
+author = "admin"
