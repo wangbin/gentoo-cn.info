@@ -5,3 +5,4 @@ canonifyurls = true
 
 [permalinks]
 articles = "/:year/:month/:filename/"
+pages = "/:filename/"
