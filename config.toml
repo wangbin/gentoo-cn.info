@@ -1,0 +1,4 @@
+baseurl = "http://www.gentoo-cn.info"
+languageCode = "zh-cn"
+title = "Gentoo 中文信息"
+canonifyurls = true
