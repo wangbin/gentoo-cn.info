@@ -6,7 +6,7 @@ author = "admin"
 summary = "关于本站"
 +++
 
-[gentoo-cn.info](http://www.gentoo-cn.info) 是一个中文自媒体网站，主要关注与 [Gentoo Linux](http://www.gentoo.org) 发行版相关的中文资讯，与同好分享关于 [Gentoo Linux](http://www.gentoo.org) 发行版的最新消息、项目进展、用户心得和使用技巧。
+[Gentoo 中文资讯](http://www.gentoo-cn.info) 是一个中文自媒体网站，主要关注与 [Gentoo Linux](http://www.gentoo.org) 发行版相关的中文资讯，与同好分享关于 [Gentoo Linux](http://www.gentoo.org) 发行版的最新消息、项目进展、用户心得和使用技巧。
 
 <!--more-->
 
