@@ -6,7 +6,7 @@ tags = ["portage", "shell"]
 +++
 
 [Porticron](https://github.com/hollow/porticron) 是一个自动同步 portage 的 shell 脚本，类似 [Debian](https://www.debian.org/) 下的 [Apticron](http://terminal28.com/apticron-automatic-email-notification-when-updates-available-debian/)，它可以通过 Cron Job 自动同步 Portage tree，并且发邮件通知你需要更新的软件，此外它还可以通过自动调用 glsa-check 工具检查安全方面的更新。 
-
+<!--more-->
 Porticron 已经在官方的 Portage 中，可以直接使用 emerge 安装：
 
 ``` bash
