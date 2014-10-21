@@ -1,7 +1,7 @@
 +++
 date = "2014-10-21T12:39:33+08:00"
 draft = false
-title = "Porticron —— 自动同步portage的脚本"
+title = "Porticron —— 自动同步 Portage 的脚本"
 tags = ["portage", "shell"]
 +++
 
