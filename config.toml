@@ -2,9 +2,11 @@ baseurl = "http://www.gentoo-cn.info"
 languageCode = "zh-cn"
 title = "Gentoo 中文资讯"
 canonifyurls = true
+copyright = "&copy; 2014 <a href=\"http://gentoo-cn.info/\">Gentoo 中文资讯</a>. All rights reserved."
 
 [permalinks]
 pages = "/:filename/"
+post = "/articles/:filename/"
 
 [params]
-author = "admin"
+description = "“编译我世界”"

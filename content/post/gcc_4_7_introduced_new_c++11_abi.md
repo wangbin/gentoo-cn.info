@@ -2,7 +2,7 @@
 date = "2014-10-27T10:58:39+08:00"
 draft = false
 title = "GCC 4.7 引入了新的 C++11 ABI"
-
+author = "Admin"
 +++
 
 最近更新过 Portage 的用户都会看到这个消息，GCC 4.7 引入了新的 [2011 ISO C++ 标准](http://www.stroustrup.com/C++11FAQ.html)。

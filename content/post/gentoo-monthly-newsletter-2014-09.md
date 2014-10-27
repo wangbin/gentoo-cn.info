@@ -2,7 +2,7 @@
 date = "2014-10-26T23:24:37+08:00"
 draft = false
 title = "Gentoo 月报2014年9月期发布"
-
+author = "Admin"
 +++
 
 
