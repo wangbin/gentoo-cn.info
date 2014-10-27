@@ -8,7 +8,7 @@ author = "Admin"
 最近更新过 Portage 的用户都会看到这个消息，GCC 4.7 引入了新的 [2011 ISO C++ 标准](http://www.stroustrup.com/C++11FAQ.html)。
 <!--more-->
 
-对于普通用户来说并不需要做什么改动，因为对于从 Portage 中安装存的 GCC，不论是4.7、4.8还是4.9版本，默认使用的还是 gnu++98 标准，但是可以通过手动在 CXXFLAGS 设置中添加 **std=c++11** 或者 **-std=gnu++11** 来启用。
+对于普通用户来说并不需要做什么改动，因为对于从 Portage 中安装存的 GCC，不论是4.7、4.8还是4.9版本，默认使用的还是 gnu++98 标准，但是可以通过手动在 CXXFLAGS 设置中添加 **-std=c++11** 或者 **-std=gnu++11** 来启用。
 
 对于想尝鲜的用户来说，需要特别注意的是，C++11 和 C++98 标准并不兼容，即使在不同版本的 GCC 之间，启用了 C++11 标准编译的代码也可能不兼容，例如[Bug 61758](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=61758)。对于 Gentoo 用户来说，如果你安装了多个版本的 GCC， 并且默认选择的是旧版本的 GCC， 有可能导致某些包编译失败，例如[Bug 513386](https://bugs.gentoo.org/show_bug.cgi?id=513386)。
 
