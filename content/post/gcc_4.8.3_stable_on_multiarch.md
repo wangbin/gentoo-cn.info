@@ -20,6 +20,9 @@ GCC 4.8.3 默认启用了 **Stack Smashing Protection (SSP)** 这一安全特性
 >>> For more information these options, refer to the GCC Manual, or the following articles.
 >>>
 >>> http://en.wikipedia.org/wiki/Buffer_overflow_protection
+>>>
 >>> http://en.wikipedia.org/wiki/Stack_buffer_overflow
+>>>
 >>> https://securityblog.redhat.com/tag/stack-protector
+>>>
 >>> http://www.outflux.net/blog/archives/2014/01/27/fstack-protector-strong
