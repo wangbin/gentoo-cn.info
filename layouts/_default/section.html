@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+<div class="row">
+  <div class="small-12 columns" role="content">
+    <h1 class="text-center">文章存档</h1>
+    {{ range .Data.Pages }}
+    {{ .Render "li" }}
+    {{ end }}
+  </div>
+  <hr />
+</div>
+{{ partial "footer.html" . }}

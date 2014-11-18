@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/app.css" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ .Site.BaseUrl }}/article/index.xml" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseUrl }}/favicon.ico" />
+    <script src="{{ .Site.BaseUrl }}/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="small-12 columns">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="/">{{.Site.Title}}</a></h1>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="divider"></li>
+              <li><a href="{{ .Site.BaseUrl }}">首页</a></li>
+              <li><a href="{{ .Site.BaseUrl }}/article/">文章存档</a></li>
+              <li><a href="{{ .Site.BaseUrl }}/article/index.xml">RSS 订阅</a></li>
+              <li><a href="{{ .Site.BaseUrl }}/about/">关于我们</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
+    </div>

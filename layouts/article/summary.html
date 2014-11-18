@@ -1,0 +1,21 @@
+<article>
+  <header>
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <h6>
+      {{ .Date.Format "2006-01-02" }}&nbsp;by {{ .Params.author|html }}&nbsp;
+      {{ if isset .Params "tags" }}
+      Tags:&nbsp;{{ range $i, $e :=.Params.tags }}
+      {{if $i}} , {{end}}
+      <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+      {{ end }}
+    </h6>
+  </header>
+  <section>
+    {{ .Summary }}
+  </section>
+  <footer>
+    <a href="{{ .Permalink }}">更多</a>
+  </footer>
+</article>
+<hr />
