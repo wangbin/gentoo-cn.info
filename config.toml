@@ -6,7 +6,7 @@ copyright = "&copy; 2014 <a href=\"http://gentoo-cn.info/\">Gentoo 中文资讯<
 
 [permalinks]
 pages = "/:filename/"
-article = "/articles/:filename/"
+article = "/article/:filename/"
 
 [params]
 description = "“编译我世界”"
