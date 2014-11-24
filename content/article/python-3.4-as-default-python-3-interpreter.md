@@ -2,7 +2,7 @@
 date = "2014-11-24T11:24:28+08:00"
 draft = false
 title = "python 3.4 成为默认的 python 3 解释器"
-
+author = "admin"
 +++
 
 11月23日的 Gentoo News 中提到，Python 3.4 现在成为默认的 Python 3 解释器，默认的 Python 2 的解释器版本是 Python 2.7。
@@ -11,8 +11,8 @@ title = "python 3.4 成为默认的 python 3 解释器"
 News 中还提到， Python 3.2 的支持将从 python-r1 eclass 中移除，因为这个版本将不再有 Bug 修复，只会有安全方面的更新，如果你的 Python 3 的默认解释器的版本还是3.2的话，建议进行更新，更新方法如下：
 
 ``` shell
-eselect python set --python3 python3.4
-emerge -uDv --changed-use @world
+# eselect python set --python3 python3.4
+# emerge -uDv --changed-use @world
 ```
 
 下面是 News 的原文：
