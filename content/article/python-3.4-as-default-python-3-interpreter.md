@@ -11,8 +11,9 @@ author = "admin"
 News 中还提到， Python 3.2 的支持将从 python-r1 eclass 中移除，因为这个版本将不再有 Bug 修复，只会有安全方面的更新，如果你的 Python 3 的默认解释器的版本还是3.2的话，建议进行更新，更新方法如下：
 
 ``` shell
-# eselect python set --python3 python3.4
-# emerge -uDv --changed-use @world
+eselect python set --python3 python3.4
+
+emerge -uDv --changed-use @world
 ```
 
 下面是 News 的原文：
