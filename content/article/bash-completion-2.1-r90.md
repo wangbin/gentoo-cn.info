@@ -47,9 +47,7 @@ $ emerge -n app-shells/bash-completion
 
 > Firstly, the install location for completions changes to follow upstream default. The completions enabled before the upgrade will continue to work but you may no longer be able to enable or disable completions installed prior to the upgrade. To solve this issue, the packages installing completions need to rebuilt. The following command can be used to automatically rebuild all the relevant packages:
 
-> $ find /usr/share/bash-completion -maxdepth 1 -type f \
-
->        '!' -name 'bash_completion' -exec emerge -1v {} +
+> $ find /usr/share/bash-completion -maxdepth 1 -type f '!' -name 'bash_completion' -exec emerge -1v {} +
 
 > Secondly, the autoloading support introduced upstream removes the penalties involved with enabling a great number of completions. This allowed us to switch to an opt-out model where all completions installed after the upgrade are enabled by default. Specific completions can be disabled using 'eselect bashcomp disable ...'
 
