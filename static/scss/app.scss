@@ -40,5 +40,9 @@
 //   "foundation/components/visibility";
 
 .top-bar {
-    margin-bottom: 20px;
+    margin-bottom: rem-calc(20);
+}
+
+pre {
+    margin-bottom: rem-calc(20);
 }

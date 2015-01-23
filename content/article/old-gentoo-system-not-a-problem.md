@@ -15,35 +15,41 @@ tags = ["portage",]
 
 1. 下载 一个比你的系统 Portage 新一点的镜像，例如你上次同步 Portage 是在2009年1月，那么你可以下载一个2009年7月份的镜像（比你的Portage新6个月）：
 
-``` bash
-# wget http://dev.gentoo.org/~swift/snapshots/portage-20090720.tar.bz2{,.gpgsig,.md5sum,.umd5sum}
-# gpg --verify portage-20090720.tar.bz2.gpgsig portage-2090720.tar.bz2
-```
+    ``` bash
+    # wget http://dev.gentoo.org/~swift/snapshots/portage-20090720.tar.bz2{,.gpgsig,.md5sum,.umd5sum}
+    # gpg --verify portage-20090720.tar.bz2.gpgsig portage-2090720.tar.bz2
+    ```
+
 
 2. 备份新的 Portage，解压缩镜像：
 
-``` bash
-# mv /usr/portage /usr/portage.latest
-# tar xjpf portage-20090720.tar.bz2 -C /usr
-```
+    ``` bash
+    # mv /usr/portage /usr/portage.latest
+    # tar xjpf portage-20090720.tar.bz2 -C /usr
+    ```
+
 
 3. 升级 System
 
-``` bash
-# emerge -u system
-```
+    ``` bash
+    # emerge -u system
+    ```
+
 
 4. 升级 Portage
 
-``` bash
-# emerge -u portage
-```
+    ``` bash
+    # emerge -u portage
+    ```
+
 
 5. 切换回最新的 Portage，尝试是否可以更新到最新的系统：
 
-``` bash
-# mv /usr/portage /usr/portage.old
-# mv /usr/portage.latest /usr/portage
-```
+    ``` bash
+    # mv /usr/portage /usr/portage.old
+    # mv /usr/portage.latest /usr/portage
+    ```
 
 如果更新成功，恭喜你，如果还是不行的话，那么重复上面的步骤，只是这次下载一个比2009年7月的镜像更新一点的，再次尝试更新系统。
+
+旧的 Portage 镜像可以从[这里](http://dev.gentoo.org/~swift/snapshots/)下载，最早的镜像时间是2008年1月份。
