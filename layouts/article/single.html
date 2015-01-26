@@ -4,7 +4,7 @@
     <article itemscope itemtype="http://schema.org/Article">
       <h1 itemprop="name">{{ .Title }}</h1>
       <h6>
-        <span itemprop="datePublished" content="{{ .Date.Format '2006-01-02' }}">{{ .Date.Format "2006-01-02" }}</span>&nbsp;by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ .Params.author }}</span></span>
+        <span itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</span>&nbsp;by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ .Params.author }}</span></span>
         {{ if isset .Params "tags" }}
 	Tags:&nbsp;{{ range $i, $e :=.Params.tags }}
 	{{if $i}} , {{end}}
