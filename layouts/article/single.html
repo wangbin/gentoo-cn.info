@@ -1,10 +1,10 @@
 {{ partial "header.html" . }}
 <div class="row">
   <div class="small-12 columns" role="content">
-    <article>
-      <h1>{{ .Title }}</h1>
+    <article itemscope itemtype="http://schema.org/Article">
+      <h1 itemprop="name">{{ .Title }}</h1>
       <h6>
-        {{ .Date.Format "2006-01-02" }}&nbsp;by {{ .Params.author }}
+        <span itemprop="datePublished" content="{{ .Date.Format '2006-01-02' }}">{{ .Date.Format "2006-01-02" }}</span>&nbsp;by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ .Params.author }}</span></span>
         {{ if isset .Params "tags" }}
 	Tags:&nbsp;{{ range $i, $e :=.Params.tags }}
 	{{if $i}} , {{end}}
@@ -13,26 +13,16 @@
         {{ end }}
       </h6>
       <div class="row">
-        <div class="small-12 columns">
+        <div class="small-12 columns" itemprop="articleBody">
           {{ .Content }}
         </div>
       </div>
     </article>
   </div>
   <div class="small-12 columns">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- bottom-banner -->
-    <ins class="adsbygoogle"
-         style="display:inline-block;width:728px;height:90px"
-         data-ad-client="ca-pub-7743566866676076"
-         data-ad-slot="1456500346"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
-  <div class="small-12 columns">
     {{ template "_internal/disqus.html" . }}
   </div>
   <hr />
+  <meta itemprop="url" content="{{ .Url }}">
 </div>
 {{ partial "footer.html" . }}
