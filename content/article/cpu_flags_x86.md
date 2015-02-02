@@ -1,6 +1,6 @@
 +++
 date = "2015-02-02T17:41:12+08:00"
-draft = flase
+draft = false
 title = "新的 USE FLAG GROUP：CPU_FLAGS_X86"
 author = "admin"
 tags = ["USE", "CPU_FLAGS_X86"]
