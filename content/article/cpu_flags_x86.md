@@ -44,7 +44,8 @@ CPU_FLAGS_X86="mmx mmxext sse sse2 sse3 sse4_1 ssse3"
 
 为了保证迁移的安全和兼容性，开发者建议用户先**不要在 USE 变量中将删除**，而是保留一段时间，等所有的包都已经升级迁移完毕之后在删除。
 
- 
+下面是 News 原文：
+
 > The USE flags corresponding to the instruction sets and other features specific to the x86 (amd64) architecture are being moved into a separate USE flag group called CPU_FLAGS_X86.
 >
 > In order not to lose CPU-specific optimizations, users will be required to update their make.conf (and package.use) file. For example, if the following USE flags were present:
