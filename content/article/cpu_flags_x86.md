@@ -10,7 +10,7 @@ tags = ["USE", "CPU_FLAGS_X86"]
 1月28日的更新引入了一个新的 USE flag group **CPU_FLAGS_X86**，Gentoo News 中描述是，与 x86 和 amd64 架构相关的 USE flags，将被转移到 **CPU_FLAGS_X86** 这个特定的 USE flag group 中。
 <!--more-->
 
-为了不失去针对 CPU 的优化，用户需要升级 make.conf 和 package.use 文件，例如，如果之前的 USE flag 是这样的：
+因为一些 USE flags 是跟 x86(_64) 相关的，为了方便用户的使用，开发者决定将这些 USE flags 从 USE 变量中移除出去，放到单独的 **CPU_FLAGS_X86** 变量中去。为了不失去针对 CPU 的优化，用户需要手动修改 make.conf 和 package.use 文件，例如，如果之前的 USE 变量是这样的：
 
 ``` !bash
 USE="mmx mmxext sse sse2 sse3"
@@ -23,6 +23,8 @@ CPU_FLAGS_X86="mmx mmxext sse sse2 sse3"
 ```
 
 注意 **CPU_FLAGS_X86** 变量可以被用于 x86 和 amd64 架构。
+
+**/usr/portage/profiles/desc/cpu_flags_x86.desc** 这个文件中列出了所有的与 **CPU_FLAGS_X86** 相关的 USE flags，如果你之前的 USE 变量中含有这些 flag ，你应当把它们也加入到 **CPU_FLAGS_X86** 中。
 
 为了方便用户升级，开发者提供了一个 Python 脚本，它可以根据用户电脑上的 */proc/cpuinfo* 信息生成正确的 **CPU_FLAGS_X86** 的值。这个脚本已经在官方的 portage 中，用户只要执行下面的命令进行安装：
 
