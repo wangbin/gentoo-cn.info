@@ -2,6 +2,8 @@
 date = "2015-02-10T18:10:54+08:00"
 draft = false
 title = "sys-apps/portage-2.2.16 发布，支持多种同步方式"
+author = "admin"
+tags = ["Portage",]
 
 +++
 

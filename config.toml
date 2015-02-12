@@ -2,7 +2,7 @@ baseurl = "http://www.gentoo-cn.info"
 languageCode = "zh-cn"
 title = "Gentoo 中文资讯"
 canonifyurls = true
-copyright = "&copy; 2014 <a href=\"http://gentoo-cn.info/\">Gentoo 中文资讯</a>. All rights reserved."
+copyright = "&copy; 2014 - 2015 <a href=\"http://gentoo-cn.info/\">Gentoo 中文资讯</a>. All rights reserved."
 disqusShortname = "gentoo-cn-info"
 
 [permalinks]

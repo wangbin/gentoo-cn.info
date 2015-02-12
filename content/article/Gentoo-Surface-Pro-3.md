@@ -2,6 +2,8 @@
 date = "2015-02-12T14:38:57+08:00"
 draft = false
 title = "在微软的 Surface Pro 3 平板上跑 Gentoo"
+author = "admin"
+tags = ["平板"]
 
 +++
 

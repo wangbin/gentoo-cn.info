@@ -2,6 +2,7 @@
 date = "2015-02-04T10:49:17+08:00"
 draft = false
 title = "Gentoo 月报2015年1月期发布"
+author = "admin"
 tags = ["Newsletter", "GMN", "Portage", "Mirror", "Git"]
 +++
 
