@@ -12,7 +12,7 @@ summary = "关于本站"
 
 ## 法律声明
 
-“Gentoo”名称是Gentoo基金会的一个商标，[本网站](http://www.gentoo-cn.info)并不是Gentoo项目的一部分并且不是由Gentoo基金会领导或管理，也不是[Gentoo 中文社区](https://gentoo.org.cn/)。
+“Gentoo”名称是Gentoo基金会的一个商标，[本网站](http://www.gentoo-cn.info)并不是 Gentoo 项目的一部分并且不是由 Gentoo 基金会领导或管理，也不是官方的 [Gentoo 中文社区](https://gentoo.org.cn/)。
 
 ## 版权声明
 

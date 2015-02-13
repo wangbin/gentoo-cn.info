@@ -11,7 +11,7 @@
       <table class="table table-striped">
         {{ range $key,$value := .Data.Terms.ByCount }}
         <tr>
-          <th><a href="{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a></th>
+          <th><a href="/{{ $data.Plural }}/{{ $value.Name | urlize }}/">{{ $value.Name }}</a></th>
           <td>{{ $value.Count }}</td>
         </tr>
         {{ end }}
