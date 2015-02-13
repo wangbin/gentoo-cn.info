@@ -1,11 +1,14 @@
 {{ partial "header.html" . }}
 <div class="container">
   <div class="row">
-    {{ range first 20 .Data.Pages }}
-    {{ if eq .Type "article" }}
-    {{ .Render "summary" }}
-    {{ end }}
-    {{ end }}
+    <div class="col-md-12">
+      <h1 class="text-center">最新文章</h1>
+    </div>
   </div>
+  {{ range first 20 .Data.Pages }}
+  {{ if eq .Type "article" }}
+  {{ .Render "summary" }}
+  {{ end }}
+  {{ end }}
 </div>
 {{ partial "footer.html" . }}

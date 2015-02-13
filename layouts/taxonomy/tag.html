@@ -1,21 +1,21 @@
 {{ partial "header.html" . }}
-<div class="row">
-  <div class="small-12 columns" role="content">
-    <h1 class="text-center">“{{ .Title |title }}” 标文章存档</h1>
-    {{ range .Data.Pages }}
-    <div class="row">
-      <div class="small-12 columns">
-        <div class="small-6 offset-small-2 columns">
-          <h4>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="text-center">包含 “{{ .Title |title }}” Tag 的文章存档</h1>
+      <table class="table table-striped">
+        {{ range .Data.Pages }}
+        <tr>
+          <th>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
-          </h4>
-        </div>
-        <div class="small-4 offset-small-8 columns">
-          <h4>{{ .Date.Format "2006-01-02" }}</h4>
-        </div>
-      </div>
+          </th>
+          <td>
+            {{ .Date.Format "2006-01-02" }}
+          </td>
+        </tr>
+        {{ end }}
+      </table>
     </div>
-    {{ end }}
   </div>
-  <hr />
+</div>
 {{ partial "footer.html" . }}

@@ -1,11 +1,14 @@
 {{ partial "header.html" . }}
-<div class="row">
-  <div class="small-12 columns" role="content">
-    <h1 class="text-center">文章存档</h1>
-    {{ range .Data.Pages }}
-    {{ .Render "li" }}
-    {{ end }}
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 class="text-center">文章存档</h1>
+      <table class="table table-striped">
+        {{ range .Data.Pages }}
+        {{ .Render "li" }}
+        {{ end }}
+      </table>
+    </div>
   </div>
-  <hr />
 </div>
 {{ partial "footer.html" . }}

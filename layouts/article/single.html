@@ -1,28 +1,26 @@
 {{ partial "header.html" . }}
-<div class="row">
-  <div class="small-12 columns" role="content">
-    <article itemscope itemtype="http://schema.org/Article">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" itemscope itemtype="http://schema.org/Article">
       <h1 itemprop="name">{{ .Title }}</h1>
       <h6>
         <span itemprop="datePublished" content="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</span>&nbsp;by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ .Params.author }}</span></span>
         {{ if isset .Params "tags" }}
-	Tags:&nbsp;{{ range $i, $e :=.Params.tags }}
-	{{if $i}} , {{end}}
-	<a href="/tags/{{ . | urlize }}">{{ . }}</a>
-	{{ end }}
+        Tags:&nbsp;{{ range $i, $e :=.Params.tags }}
+        {{if $i}} , {{end}}
+        <a href="/tags/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
         {{ end }}
       </h6>
-      <div class="row">
-        <section class="small-12 columns articleBody" itemprop="articleBody">
-          {{ .Content }}
-        </section>
+      {{ .Content }}
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        {{ template "_internal/disqus.html" . }}
       </div>
-    </article>
+      <hr />
+      <meta itemprop="url" content="{{ .Url }}">
+    </div>
   </div>
-  <div class="small-12 columns">
-    {{ template "_internal/disqus.html" . }}
-  </div>
-  <hr />
-  <meta itemprop="url" content="{{ .Url }}">
 </div>
 {{ partial "footer.html" . }}
