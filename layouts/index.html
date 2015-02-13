@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
-<div class="row">
-  <div class="small-12 columns" role="content">
+<div class="container">
+  <div class="row">
     {{ range first 20 .Data.Pages }}
     {{ if eq .Type "article" }}
     {{ .Render "summary" }}
