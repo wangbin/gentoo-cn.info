@@ -7,7 +7,7 @@ tags = ["amd64", "multilib"]
 +++
 
 来自3月28日的 Gentoo News 《True multilib support on amd64》，自3月29日起，在64位机器上的 Gentoo 系统将开启真正的 multilib 支持，之前的 *emul-linux-x86* 诸包已经被 Mask，并将被移除。对于用户而言这样的好处是用户可以不必依赖预编译好的二进制包，直接从源码编译32为的库，从而获得与其他 ebuild 一样的灵活性和安全性。
-
+<!--more-->
 对于使用 multilib profile 的用户来说，可能需要一些特定的操作，因为新系统可能和旧系统不兼容。例如来自第三方的源可能尚未支持这一特性，需要手动移除。
 
 用户可以通过对某个包启用 **abi_x86_32** USE flag，使其编译必要的32位库。例如在 */etc/portage/package.use* 中添加下面一行：
