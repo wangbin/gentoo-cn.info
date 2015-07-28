@@ -5,10 +5,10 @@
     <title>{{ .Title }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="{{ .Site.BaseUrl }}/assets/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="{{ .Site.BaseUrl }}/assets/tyrian.min.css" rel="stylesheet" media="screen">
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ .Site.BaseUrl }}/article/index.xml" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseUrl }}/favicon.ico" />
+    <link href="{{ .Site.BaseURL }}/assets/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{ .Site.BaseURL }}/assets/tyrian.min.css" rel="stylesheet" media="screen">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ .Site.BaseURL }}/article/index.xml" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ .Site.BaseURL }}/favicon.ico" />
   </head>
   <body>
     <header>
@@ -40,7 +40,7 @@
               </div>
             </div>
             <div class="logo">
-              <img src="{{ .Site.BaseUrl }}/assets/site-logo.png" alt="Gentoo Linux Logo"/>
+              <img src="{{ .Site.BaseURL }}/assets/site-logo.png" alt="Gentoo Linux Logo"/>
               <span class="site-label">{{.Site.Title}}</span>
             </div>
           </div>
@@ -59,9 +59,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-main-collapse">
               <ul class="nav navbar-nav">
-                <li><a href="{{ .Site.BaseUrl }}">首页</a></li>
-                <li><a href="{{ .Site.BaseUrl }}/article/">文章存档</a></li>
-                <li><a href="{{ .Site.BaseUrl }}/about/">关于我们</a></li>                
+                <li><a href="{{ .Site.BaseURL }}">首页</a></li>
+                <li><a href="{{ .Site.BaseURL }}/article/">文章存档</a></li>
+                <li><a href="{{ .Site.BaseURL }}/about/">关于我们</a></li>                
               </ul>
             </div>
           </div>
