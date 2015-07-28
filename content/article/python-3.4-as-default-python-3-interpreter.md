@@ -3,6 +3,7 @@ date = "2014-11-24T11:24:28+08:00"
 draft = false
 title = "python 3.4 成为默认的 python 3 解释器"
 author = "admin"
+tags = ["Python"]
 +++
 
 11月23日的 Gentoo News 中提到，Python 3.4 现在成为默认的 Python 3 解释器，默认的 Python 2 的解释器版本是 Python 2.7。
